@@ -16,11 +16,11 @@ class HighScoresTest(unittest.TestCase):
         expected = 100
         self.assertEqual(personal_best(scores), expected)
 
-    # def test_personal_top_three_from_a_list_of_scores(self):
-    #     scores = [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
-    #     expected = [100, 90, 70]
-    #     self.assertEqual(personal_top_three(scores), expected)
-    #
+    def test_personal_top_three_from_a_list_of_scores(self):
+        scores = [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
+        expected = [100, 90, 70]
+        self.assertEqual(personal_top_three(scores), expected)
+
     # def test_personal_top_highest_to_lowest(self):
     #     scores = [20, 10, 30]
     #     expected = [30, 20, 10]
